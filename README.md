@@ -1,7 +1,10 @@
 # Guan Dan (掼蛋) online
+This 4 player game is a chinese team card game. You win by advancing your team score to Ace and then winning the next round, starting from 2 and going after the french card order. To advance the team score, one must win the current round. This can be done by discarding all the cards on your hand.
 
-An online card table for four players. The server deals the cards, checks every move,
-and sends each player only their own hand.
+Since a card game requires people being present, this online version allows people to play this game with friends while being seperated. 
+
+This is a project purely coded by AI (Antrophic Claude Opus 5.5). The point of this project was to test out publishing own projects to the internet, paired with personal interest in this game, allowing me to play this game personally.
+
 
 ## Files
 
@@ -16,14 +19,3 @@ and sends each player only their own hand.
     npm start
 
 Then open http://localhost:3000.
-
-## Put it online with Render
-
-1. Upload this folder to a GitHub repository (without `node_modules`).
-2. On render.com: New → Web Service → choose the repository.
-3. Build command: `npm install` · Start command: `npm start` · Instance type: Free.
-4. Open the address Render gives you, create a table, and send the link to your friends.
-
-On the free plan the server sleeps after 15 minutes without visitors; the first visit after
-that takes about a minute. Tables live in memory, so unfinished tables are lost when the
-server sleeps or restarts.
